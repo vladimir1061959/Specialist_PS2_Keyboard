@@ -4,6 +4,7 @@ del spec_keyb.asm
 del spec_keyb.cbi
 del spec_keyb.cci
 del spec_keyb.c~
+del spec_keyb.c_cbf
 del spec_keyb.cof
 del spec_keyb.fct
 del spec_keyb.i
