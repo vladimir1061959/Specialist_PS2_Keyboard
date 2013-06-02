@@ -2,7 +2,7 @@
 Toolset=AVR
 FormatVersion=2
 Files=1
-OpenedFiles=1
+OpenedFiles=2
 Top0=219
 Left0=438
 Height0=330
@@ -24,7 +24,7 @@ ActiveEditorPanel=0
 EditorPanel0=0
 PageIndex0=0
 EditorPanel1=0
-TimeStamp1=1119796668
+TimeStamp1=1120057082
 PageIndex1=1
 AllowDisplayFunctionCallTree=1
 TimeStamp0=1112058770
@@ -35,7 +35,7 @@ OutputLinkerFilesDirectory=
 OF2=spec_keyb.asm
 Active2=0
 EditorPanel2=0
-TimeStamp2=1112122155
+TimeStamp2=1120056326
 PageIndex2=2
 Column1=9
 OF3=..\..\SpecKeyb.Old1\Прошивка и исходники\spec_keyb.c
@@ -104,7 +104,7 @@ WarningCantAllocVarToReg=1
 WarningDataStackUsage=1
 WarningHardwareStackLow=1
 DebugBootLoader=0
-Build=779
+Build=784
 UseEEPROMLocation0=1
 RebuildAll=0
 LinkageInformationPresent=1
@@ -286,18 +286,18 @@ Row=0
 Column=0
 ScrollPosX=0
 ScrollPosY=0
-TimeStamp=1119817162
+TimeStamp=1120057085
 [BookmarksFoldedCode]
 Files=3
 F1=spec_keyb.c
 F2=spec_keyb.asm
 F3=..\..\SpecKeyb.Old1\Прошивка и исходники\spec_keyb.c
 [Bookmarks1]
-TimeStamp=1119796668
-Row=982
-Column=77
+TimeStamp=1120057082
+Row=1054
+Column=14
 ScrollPosX=0
-ScrollPosY=971
+ScrollPosY=1021
 BK0=-1
 BK1=-1
 BK2=-1
@@ -313,11 +313,11 @@ Use1Wire=0
 UseFATFS=0
 UseAlphanumericLCD=0
 [Bookmarks2]
-TimeStamp=1112233069
-Row=3115
-Column=23
+TimeStamp=1120057083
+Row=2992
+Column=0
 ScrollPosX=0
-ScrollPosY=3103
+ScrollPosY=2960
 BK0=-1
 BK1=-1
 BK2=-1
@@ -346,8 +346,6 @@ BK8=-1
 BK9=-1
 [FoldedCode3]
 Blocks=0
-[FoldedCode2]
-Blocks=0
 [HeadersList]
 Files=1
 F1=E:\COM\Специалист\KEYB\Прошивка и исходники\spec_keyb.c
@@ -356,4 +354,6 @@ Files=2
 F1=c:\cvavreval\inc\delay.h
 F2=c:\cvavreval\inc\mega8.h
 [FoldedCode1]
+Blocks=0
+[FoldedCode2]
 Blocks=0

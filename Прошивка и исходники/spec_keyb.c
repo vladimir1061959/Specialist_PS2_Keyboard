@@ -590,7 +590,7 @@ void calc() {
   // Преобразовываем матрицу 12x6 (низ) в 256x6
   v_i = 0;
   do {
-    v_j = 0;
+    v_j = 0b01000000; // RESET
     if(0==(v_i&0x01)) v_j |= v_row[0];
     if(0==(v_i&0x02)) v_j |= v_row[1];
     if(0==(v_i&0x04)) v_j |= v_row[2];
@@ -776,6 +776,10 @@ _v2:    ; DDRB = c2b[PINC];
         ; Режим сканирования и подготовка регистров
         CLR  R9
         MOV  _scanMode, R29
+        
+        ; Возвращаем ножку сброса
+    	LDI  R28, 0x40
+    	OUT  DDRC, R28
         
         ; Если выполняется updatePorts, прерываем её
         OR _intTrigger, _intTrigger
@@ -1002,7 +1006,7 @@ void main(void) {
   DDRC  = 0b01000000; // RESET
   DDRD  = 0;
   PORTB = 0;
-  PORTC = 0b01000000; // RESET
+  PORTC = 0b00000000; // RESET
   PORTD = 0;     
   PORTD.KEY_HP = 1;
   DDRD.KEY_HP = 1;
@@ -1045,6 +1049,11 @@ void main(void) {
     CLR  R9
     SEI
   #endasm
+
+  // Сброс компьютера (завершение)
+
+  delay_ms300();
+  PORTC = 0b01000000; // RESET
 
   // Основной цикл  
 
